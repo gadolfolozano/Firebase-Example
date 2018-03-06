@@ -13,6 +13,7 @@
 		91FDC519204E3EA0005E3744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC517204E3EA0005E3744 /* Main.storyboard */; };
 		91FDC51B204E3EA0005E3744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC51A204E3EA0005E3744 /* Assets.xcassets */; };
 		91FDC51E204E3EA0005E3744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC51C204E3EA0005E3744 /* LaunchScreen.storyboard */; };
+		91FDC526204E40EE005E3744 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC525204E40EE005E3744 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		91FDC51A204E3EA0005E3744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FDC51D204E3EA0005E3744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91FDC51F204E3EA0005E3744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FDC525204E40EE005E3744 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				91FDC51A204E3EA0005E3744 /* Assets.xcassets */,
 				91FDC51C204E3EA0005E3744 /* LaunchScreen.storyboard */,
 				91FDC51F204E3EA0005E3744 /* Info.plist */,
+				91FDC525204E40EE005E3744 /* LoginViewController.swift */,
 			);
 			path = "Firebase Example";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FDC526204E40EE005E3744 /* LoginViewController.swift in Sources */,
 				91FDC516204E3EA0005E3744 /* SecondViewController.swift in Sources */,
 				91FDC512204E3EA0005E3744 /* AppDelegate.swift in Sources */,
 				91FDC514204E3EA0005E3744 /* FirstViewController.swift in Sources */,
