@@ -145,6 +145,8 @@
                         <viewLayoutGuide key="safeArea" id="cta-ih-12l"/>
                     </view>
                     <connections>
+                        <outlet property="edtPassword" destination="2dG-gV-WxK" id="Ifb-1s-x0V"/>
+                        <outlet property="edtUserName" destination="60c-vL-QMa" id="JSC-7A-4of"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="toOpenMain" id="RRE-AT-Psx"/>
                     </connections>
                 </viewController>

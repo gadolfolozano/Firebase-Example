@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var edtUserName: UITextField!
+    @IBOutlet weak var edtPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +21,26 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogInClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toOpenMain", sender: nil)
+        
+        
+        /*Auth.auth().createUser(withEmail: edtUserName.text!, password: edtPassword.text!, completion: { (user, error) in
+            
+            
+        })*/
+        
+        Auth.auth().signIn(withEmail: edtUserName.text!, password: edtPassword.text!) { (user, error) in
+            if error != nil {
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                alert.addAction(okButton)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                
+                
+                
+            }
+        }
+        
     }
     
     @IBAction func onRegisterClicked(_ sender: Any) {
