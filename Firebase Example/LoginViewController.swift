@@ -21,13 +21,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogInClicked(_ sender: Any) {
-        
-        
-        /*Auth.auth().createUser(withEmail: edtUserName.text!, password: edtPassword.text!, completion: { (user, error) in
-            
-            
-        })*/
-        
         Auth.auth().signIn(withEmail: edtUserName.text!, password: edtPassword.text!) { (user, error) in
             if error != nil {
                 let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
@@ -35,15 +28,22 @@ class LoginViewController: UIViewController {
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             } else {
-                
-                
-                
+                print(user!)
             }
         }
         
     }
     
     @IBAction func onRegisterClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toOpenMain", sender: nil)
+        Auth.auth().createUser(withEmail: edtUserName.text!, password: edtPassword.text! ){ (user, error) in
+            if error != nil {
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                alert.addAction(okButton)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                print(user!)
+            }
+        }
     }
 }

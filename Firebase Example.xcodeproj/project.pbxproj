@@ -16,6 +16,7 @@
 		91FDC51E204E3EA0005E3744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC51C204E3EA0005E3744 /* LaunchScreen.storyboard */; };
 		91FDC526204E40EE005E3744 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC525204E40EE005E3744 /* LoginViewController.swift */; };
 		91FDC528204F8DD6005E3744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC527204F8DD6005E3744 /* GoogleService-Info.plist */; };
+		91FDC52A2058CE33005E3744 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC5292058CE33005E3744 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		91FDC51F204E3EA0005E3744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91FDC525204E40EE005E3744 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		91FDC527204F8DD6005E3744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91FDC5292058CE33005E3744 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		946256C477265FD63EB37F94 /* Pods-Firebase Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Example/Pods-Firebase Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				91FDC511204E3EA0005E3744 /* AppDelegate.swift */,
 				91FDC513204E3EA0005E3744 /* FirstViewController.swift */,
 				91FDC515204E3EA0005E3744 /* SecondViewController.swift */,
+				91FDC5292058CE33005E3744 /* SplashViewController.swift */,
 				91FDC525204E40EE005E3744 /* LoginViewController.swift */,
 				91FDC517204E3EA0005E3744 /* Main.storyboard */,
 				91FDC51A204E3EA0005E3744 /* Assets.xcassets */,
@@ -237,6 +240,7 @@
 				91FDC516204E3EA0005E3744 /* SecondViewController.swift in Sources */,
 				91FDC512204E3EA0005E3744 /* AppDelegate.swift in Sources */,
 				91FDC514204E3EA0005E3744 /* FirstViewController.swift in Sources */,
+				91FDC52A2058CE33005E3744 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
