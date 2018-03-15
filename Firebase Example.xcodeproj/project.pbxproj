@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E10AE66BF670B68581CA6D5 /* Pods_Firebase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E88DE4EDE62BA45E5086594 /* Pods_Firebase_Example.framework */; };
 		91FDC512204E3EA0005E3744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC511204E3EA0005E3744 /* AppDelegate.swift */; };
-		91FDC514204E3EA0005E3744 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC513204E3EA0005E3744 /* FirstViewController.swift */; };
-		91FDC516204E3EA0005E3744 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC515204E3EA0005E3744 /* SecondViewController.swift */; };
+		91FDC514204E3EA0005E3744 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC513204E3EA0005E3744 /* FeedViewController.swift */; };
+		91FDC516204E3EA0005E3744 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC515204E3EA0005E3744 /* UploadViewController.swift */; };
 		91FDC519204E3EA0005E3744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC517204E3EA0005E3744 /* Main.storyboard */; };
 		91FDC51B204E3EA0005E3744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC51A204E3EA0005E3744 /* Assets.xcassets */; };
 		91FDC51E204E3EA0005E3744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FDC51C204E3EA0005E3744 /* LaunchScreen.storyboard */; };
@@ -24,8 +24,8 @@
 		73C2D441338323ACC21F6C1D /* Pods-Firebase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Example/Pods-Firebase Example.debug.xcconfig"; sourceTree = "<group>"; };
 		91FDC50E204E3EA0005E3744 /* Firebase Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FDC511204E3EA0005E3744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91FDC513204E3EA0005E3744 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		91FDC515204E3EA0005E3744 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		91FDC513204E3EA0005E3744 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		91FDC515204E3EA0005E3744 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		91FDC518204E3EA0005E3744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91FDC51A204E3EA0005E3744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FDC51D204E3EA0005E3744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				91FDC511204E3EA0005E3744 /* AppDelegate.swift */,
-				91FDC513204E3EA0005E3744 /* FirstViewController.swift */,
-				91FDC515204E3EA0005E3744 /* SecondViewController.swift */,
+				91FDC513204E3EA0005E3744 /* FeedViewController.swift */,
+				91FDC515204E3EA0005E3744 /* UploadViewController.swift */,
 				91FDC5292058CE33005E3744 /* SplashViewController.swift */,
 				91FDC525204E40EE005E3744 /* LoginViewController.swift */,
 				91FDC517204E3EA0005E3744 /* Main.storyboard */,
@@ -237,9 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FDC526204E40EE005E3744 /* LoginViewController.swift in Sources */,
-				91FDC516204E3EA0005E3744 /* SecondViewController.swift in Sources */,
+				91FDC516204E3EA0005E3744 /* UploadViewController.swift in Sources */,
 				91FDC512204E3EA0005E3744 /* AppDelegate.swift in Sources */,
-				91FDC514204E3EA0005E3744 /* FirstViewController.swift in Sources */,
+				91FDC514204E3EA0005E3744 /* FeedViewController.swift in Sources */,
 				91FDC52A2058CE33005E3744 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

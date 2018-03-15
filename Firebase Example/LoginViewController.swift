@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             } else {
-                print(user!)
+                self.performSegue(withIdentifier: "toOpenMain", sender: nil)
             }
         }
         
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             } else {
-                print(user!)
+                self.performSegue(withIdentifier: "toOpenMain", sender: nil)
             }
         }
     }

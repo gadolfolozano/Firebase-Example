@@ -12,10 +12,7 @@ import FirebaseAuth
 class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        print("showLoginSegue")
-        
+        super.viewDidLoad()        
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if(user != nil) {
                 self.navigateToMain()
