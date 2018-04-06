@@ -65,16 +65,16 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
                 self.present(alert, animated: true, completion: nil)
             } else {
                 self.mImageView.image = UIImage(named: "ic_choose_gallery.png")
-                self.tabBarController?.selectedIndex = 0
-                
                 
                 let imageURL = metadata?.downloadURL()?.absoluteString
-                
                 ref.child("posts").child(uuidPost)
-                    .setValue(["imageURL": imageURL, "user": currentUser?.email])
+                    .setValue(["imageURL": imageURL,
+                               "user": currentUser?.email])
                 ref.child("users").child((currentUser?.uid)!).child("posts").child(uuidPost)
-                    .setValue(["imageURL": imageURL, "user": currentUser?.email])
+                    .setValue(["imageURL": imageURL,
+                               "user": currentUser?.email])
                 
+                self.tabBarController?.selectedIndex = 0
             }
         }
         
