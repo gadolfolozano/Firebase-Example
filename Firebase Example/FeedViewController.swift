@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
+import SDWebImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -51,8 +52,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //bind
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = imagesUrlArray[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellViewTable
+        
+        //cell.mUserName.text = imagesUrlArray[indexPath.row]
+        
+        cell.mImageView.sd_setImage(with: URL(string: self.imagesUrlArray[indexPath.row]))
+        
         return cell
     }
 
