@@ -10,6 +10,7 @@
 		5E10AE66BF670B68581CA6D5 /* Pods_Firebase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E88DE4EDE62BA45E5086594 /* Pods_Firebase_Example.framework */; };
 		91527B2A207042C800A65A06 /* ic_choose_gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 91527B29207042C800A65A06 /* ic_choose_gallery.png */; };
 		91543CAC2077268B000D6268 /* CellViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91543CAB2077268B000D6268 /* CellViewTable.swift */; };
+		91543CAE20785B55000D6268 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91543CAD20785B55000D6268 /* Post.swift */; };
 		91FDC512204E3EA0005E3744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC511204E3EA0005E3744 /* AppDelegate.swift */; };
 		91FDC514204E3EA0005E3744 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC513204E3EA0005E3744 /* FeedViewController.swift */; };
 		91FDC516204E3EA0005E3744 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FDC515204E3EA0005E3744 /* UploadViewController.swift */; };
@@ -26,6 +27,7 @@
 		73C2D441338323ACC21F6C1D /* Pods-Firebase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Example/Pods-Firebase Example.debug.xcconfig"; sourceTree = "<group>"; };
 		91527B29207042C800A65A06 /* ic_choose_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_choose_gallery.png; sourceTree = "<group>"; };
 		91543CAB2077268B000D6268 /* CellViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewTable.swift; sourceTree = "<group>"; };
+		91543CAD20785B55000D6268 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		91FDC50E204E3EA0005E3744 /* Firebase Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FDC511204E3EA0005E3744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91FDC513204E3EA0005E3744 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		91FDC510204E3EA0005E3744 /* Firebase Example */ = {
 			isa = PBXGroup;
 			children = (
+				91543CAD20785B55000D6268 /* Post.swift */,
 				91543CAB2077268B000D6268 /* CellViewTable.swift */,
 				91FDC511204E3EA0005E3744 /* AppDelegate.swift */,
 				91FDC513204E3EA0005E3744 /* FeedViewController.swift */,
@@ -260,6 +263,7 @@
 				91FDC512204E3EA0005E3744 /* AppDelegate.swift in Sources */,
 				91543CAC2077268B000D6268 /* CellViewTable.swift in Sources */,
 				91FDC514204E3EA0005E3744 /* FeedViewController.swift in Sources */,
+				91543CAE20785B55000D6268 /* Post.swift in Sources */,
 				91FDC52A2058CE33005E3744 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

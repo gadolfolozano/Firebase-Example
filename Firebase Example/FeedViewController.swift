@@ -14,7 +14,7 @@ import SDWebImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var imagesUrlArray = [String]()
+    var postArray = [Post]()
     
     @IBOutlet weak var mTableView: UITableView!
     
@@ -29,7 +29,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func retrieveData(){
         
-        self.imagesUrlArray.removeAll(keepingCapacity: false)
+        self.postArray.removeAll(keepingCapacity: false)
         
         let ref = Database.database().reference()
         ref.child("posts").observe(DataEventType.value, with: { (snapshot) in
@@ -37,8 +37,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             //let imageURL = value?["imageURL"] as? String ?? ""
             for child in snapshot.children {
                 let value = (child as? DataSnapshot)?.value as? NSDictionary
-                let imageURL = value?["imageURL"] as? String ?? ""
-                self.imagesUrlArray.append(imageURL)
+                let post = Post()
+                post.urlImage = value?["imageURL"] as? String ?? ""
+                post.userName = value?["user"] as? String ?? ""
+                self.postArray.append(post)
                 
                 self.mTableView.reloadData()
             }
@@ -47,7 +49,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //get count
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imagesUrlArray.count
+        return postArray.count
     }
     
     //bind
@@ -55,9 +57,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellViewTable
         
-        //cell.mUserName.text = imagesUrlArray[indexPath.row]
+        cell.mUserName.text = self.postArray[indexPath.row].userName
         
-        cell.mImageView.sd_setImage(with: URL(string: self.imagesUrlArray[indexPath.row]))
+        cell.mImageView.sd_setImage(with: URL(string: self.postArray[indexPath.row].urlImage))
         
         return cell
     }
